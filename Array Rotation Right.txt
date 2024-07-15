@@ -1,0 +1,22 @@
+import java.util.*;
+class Main{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int size=sc.nextInt();
+    int arr[]=new int[size];
+    int itr;
+    for(itr=0;itr<size;itr++)
+      arr[itr]=sc.nextInt();
+      int temp,i;
+      int rot=sc.nextInt();
+      for(i=1;i<=rot%size;i++){
+        temp=arr[size-1];
+      for(itr=size-1;itr>=1;itr--)
+      arr[itr]=arr[itr-1];
+      arr[0]=temp;
+      }
+      for(itr=0;itr<size;itr++)
+  System.out.print(arr[itr]+ " ");
+}
+}
+
